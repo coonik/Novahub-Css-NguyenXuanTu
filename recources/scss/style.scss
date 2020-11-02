@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  .container {
+    background-color: #f7f7f7;
+    width: 100vw;
+    height: 100vh;
+
+    .sidebar {
+      width: 287px;
+      position: absolute;
+      background: #FFFFFF;
+      height: 100%;
+      left: 0%;
+      right: 0%;
+      top: 0px;
+      border: 1px solid #FFFFFF;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: #0000004f 2px 3px 6px 0px;
+
+      >div:first-child {
+        text-align: right;
+        img {
+          margin: 17px 17px 0 0 ;
+          cursor: pointer;
+        }
+      }
+
+      .sidebar-profile {
+        margin: 18px 0;
+        display: flex;
+
+        img {
+          padding: 0 25px;
+        }
+
+        div {
+          margin-top: 5px;
+          >p:first-child {
+            width: 81px;
+            height: 18px;
+  
+            font-family: Carmen Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+  
+            text-align: center;
+  
+            color: #262626;
+          }
+          >p:last-child {
+            margin-left: 3px;
+            width: 96px;
+            height: 18px;
+            left: 85px;
+            top: 86px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+
+            color: #D75F8D;
+          }
+        }
+      }
+
+      .sidebar-menu {  
+        margin-bottom: 42px; 
+        >li {
+          cursor: pointer;
+          display: flex;
+          padding-left: 35px;
+          margin-top: 20px;
+          p {  
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px; 
+  
+            color: #747474;
+            align-self: center;
+            margin: 17px 22px;  
+            font-weight: 400; 
+          }
+        } 
+        .events-image {
+          display: flex;
+          position: relative;
+          
+          >div {
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            left: 16px;
+            top: 14px;
+            font-family: Roboto;
+            font-size: 10px;
+            line-height: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            border-radius: 50%;
+            color: #FFFFFF;
+            background-color: #d75f8d;
+          }            
+        }
+
+        >li:hover {
+          p {
+            font-weight: 500;
+          }
+        }
+      }
+
+      .logout {
+        position: absolute;
+        margin: 0;
+        bottom: 39px;
+        width: 100%;
+        p {
+          color: #262626 !important;
+        }
+      }
+    }
+
+    .main {
+      position: absolute;
+      height: 100%;
+      left: 287px;
+      right: 0%;
+      top: 0px;
+      background-color: initial;
+    }
+  }
+
+}
