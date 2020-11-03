@@ -15,20 +15,16 @@
 
   .container {
     background-color: #E5E5E5;
+    display: flex;
 
     .sidebar {
       display: flex;
       flex-direction: column;
-      width: 287px;
+      width: 20%;
       min-height: 100vh;
-      position: absolute;
       background: #FFFFFF;
-      left: 0%;
-      right: 0%;
-      top: 0px;
       border: 1px solid #FFFFFF;
-      border-top-right-radius: 25px;
-      border-bottom-right-radius: 25px;
+      border-radius: 0 25px 25px 0;
       box-shadow: #0000004f 2px 3px 6px 0px;
 
       >div:first-child {
@@ -51,14 +47,11 @@
           margin-top: 5px;
           >p:first-child {
             width: 81px;
-            height: 18px;
-  
+            height: 18px;  
             font-family: carmenSansMedium;
             font-size: 18px;
-            line-height: 18px;
-  
+            line-height: 18px;  
             text-align: center;
-  
             color: #262626;
           }
           >p:last-child {
@@ -66,13 +59,9 @@
             height: 18px;
             left: 85px;
             top: 86px;
-
             font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
             font-size: 14px;
             line-height: 18px;
-
             color: #D75F8D;
           }
         }
@@ -87,14 +76,11 @@
           margin-top: 20px;
           p {  
             font-family: Roboto;
-            font-style: normal;
             font-size: 18px;
-            line-height: 18px; 
-  
+            line-height: 18px;   
             color: #747474;
             align-self: center;
             margin: 17px 22px;  
-            font-weight: 400; 
           }
         } 
         .events-image {
@@ -109,11 +95,9 @@
             top: 10px;
             font-family: Roboto;
             font-size: 10px;
-            line-height: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: red;
             border-radius: 50%;
             color: #FFFFFF;
             background-color: #d75f8d;
@@ -136,19 +120,15 @@
     }
 
     .main {
-      position: absolute;
-      min-height: 100%;
-      left: 287px;
-      right: 0%;
-      top: 0px;
-      background-color: initial;
-
+      flex: 1;
+      padding: 0 28px;
+      >div {
+        margin-top: 28px;
+      }
       .search {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin: 28px;
-        margin-right: 0;
         .search-input {
           flex: 1;
           position: relative;
@@ -172,20 +152,31 @@
             top: 60px;
             left: 56px;
             font-family: Roboto;
-            font-weight: 500;
             font-size: 16px;
             line-height: 19px;
-            /* identical to box height */
-            
-            
             color: #747474;
           }
         }
         .search-home {
-          padding: 0 28px;
+          padding-left: 28px;
+        }
+      }
+      .content {
+        display: flex;
+        justify-content: flex-end;
+        >div>p {
+          font-family: carmenSansMedium;            
+          font-size: 22px;            
+          color: #000000;
+        }
+        .chat {
+          flex: 1;
+          margin-right: 28px;;
+        }
+        .reminders {
+          width: calc((100% - 42px)/3);
         }
       }
     }
   }
-
 }
