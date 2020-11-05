@@ -16,6 +16,15 @@
   .container {
     background-color: #E5E5E5;
     display: flex;
+    
+    p {      
+      font-family: Roboto;
+      font-style: normal;
+    }
+    
+    a {
+      text-decoration: none;
+    }
 
     .sidebar {
       display: flex;
@@ -59,7 +68,6 @@
             height: 18px;
             left: 85px;
             top: 86px;
-            font-family: Roboto;
             font-size: 14px;
             line-height: 18px;
             color: #D75F8D;
@@ -74,8 +82,7 @@
           display: flex;
           padding-left: 35px;
           margin-top: 20px;
-          p {  
-            font-family: Roboto;
+          p {            
             font-size: 18px;
             line-height: 18px;   
             color: #747474;
@@ -92,8 +99,7 @@
             width: 13px;
             height: 13px;
             left: 17px;
-            top: 10px;
-            font-family: Roboto;
+            top: 10px;            
             font-size: 10px;
             display: flex;
             justify-content: center;
@@ -122,9 +128,6 @@
     .main {
       flex: 1;
       padding: 0 28px;
-      >div {
-        margin-top: 28px;
-      }
       .search {
         display: flex;
         justify-content: flex-end;
@@ -149,9 +152,8 @@
           }
           p {
             position: absolute;
-            top: 60px;
+            top: 100%;
             left: 56px;
-            font-family: Roboto;
             font-size: 16px;
             line-height: 19px;
             color: #747474;
@@ -164,17 +166,139 @@
       .content {
         display: flex;
         justify-content: flex-end;
-        >div>p {
+        .content-sub-title {
           font-family: carmenSansMedium;            
           font-size: 22px;            
           color: #000000;
+          margin-top: 28px;
         }
         .chat {
           flex: 1;
-          margin-right: 28px;;
+          margin-right: 28px;
+          
+          >div {
+            padding: 24px 30px 40px 24px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            box-shadow: #0000004f 2px 3px 6px 0px;
+            
+            .search-input {
+              >input {
+                height: 50px;
+              }
+              
+              >p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #747474;
+              }
+              
+              img {
+                top: 16px;
+              }
+            }
+            
+            .search-home {
+              padding-left: 35px;
+            }
+          }
+          
+          .chat-sub-title {
+            margin-top: 30px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.15px;
+            color: #747474;
+          }
+          
+          .contact {
+            margin-top: 10px;
+            display: flex;
+            position: relative;
+            
+            .active-icon {
+              position: absolute;
+              top: 0;
+              left: 38px;
+            }
+            
+            .contact-info {
+              margin-left: 10px;
+              p {                
+                line-height: 21px;
+              }
+              
+              >p:first-child {
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 0.25px;
+                color: #262626;
+              }
+              >p:last-child {
+                font-weight: normal;
+                font-size: 12px;
+                letter-spacing: 0.25px;
+                color: #747474;
+              }
+            }
+            
+            .contact-activity {
+              flex: 1;
+              text-align: right;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 21px;
+              letter-spacing: 0.25px;
+              color: #747474;
+            }
+          }
         }
-        .reminders {
-          width: calc((100% - 42px)/3);
+        >div:last-child {
+            width: calc((100% - 42px)/3);
+            
+          .reminder {  
+            position: relative;        
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            box-shadow: #0000004f 2px 3px 6px 0px;  
+            
+            .reminder-date {
+              margin-right: 12px;
+              padding: 16px 10px;
+              width: 66px;
+              min-height: 80px;
+              box-sizing: border-box;
+              text-align: center;
+              background-color: #E28BAE;            
+              border-radius: 10px 0 0 10px;
+              font-size: 22px;
+              color: #FFFFFF;
+            }
+            .reminder-text {
+              font-weight: 500;
+              flex: 1;
+              font-size: 12px;
+              letter-spacing: 0.15px;
+              color: #262626;
+            }
+            >img {
+              padding: 8px 14px 0 0;
+            }
+            .sub-btn {
+              position: absolute;
+              top: -18px;
+              right: 0;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 112%;
+              text-align: right;
+              color: #D75F8D;
+            }
+          }
         }
       }
     }
