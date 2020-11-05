@@ -164,9 +164,19 @@
         }
       }
       .content {
+        
+        .sub-title {
+          margin-top: 30px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.15px;
+          color: #747474;
+        }
+        
         display: flex;
         justify-content: flex-end;
-        .content-sub-title {
+        .content-title {
           font-family: carmenSansMedium;            
           font-size: 22px;            
           color: #000000;
@@ -202,15 +212,6 @@
             .search-home {
               padding-left: 35px;
             }
-          }
-          
-          .chat-sub-title {
-            margin-top: 30px;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 0.15px;
-            color: #747474;
           }
           
           .contact {
@@ -256,7 +257,7 @@
           }
         }
         >div:last-child {
-            width: calc((100% - 42px)/3);
+            width: calc((100% - 42px)/4);
             
           .reminder {  
             position: relative;        
@@ -298,6 +299,23 @@
               text-align: right;
               color: #D75F8D;
             }
+          }
+        }
+        
+        .featured-event {
+          padding: 20px;
+          background-color: #FFFFFF;
+          
+          .sub-title {
+            margin: 0;
+          }
+          
+          .featured-event-title {
+            padding-top: 5px;
+            font-weight: 500;
+            font-size: 25px;
+            letter-spacing: 0.25px;
+            color: rgba(0, 0, 0, 0.87);
           }
         }
       }
