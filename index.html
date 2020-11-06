@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" type="text/css" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="./recources/scss/queries.scss">
     <link rel="stylesheet/less" type="text/css" href="./recources/scss/style.scss">
     <script src="//cdn.jsdelivr.net/npm/less" ></script>
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
-        <div>
-          <img src="./recources/img/left-arrow.svg" alt="left-arrow image">
+        <div class="arrow">
+          <div class="left-arrow">
+            <img src="./recources/img/left-arrow.svg" alt="left-arrow image">
+          </div>
+          <div class="right-arrow">          
+            <img src="./recources/img/right-arrow.svg" alt="right-arrow image">
+          </div>
         </div>
         <div class="sidebar-profile">
           <img src="./recources/img/avatar.svg" alt="avatar image">
@@ -70,6 +76,27 @@
               <p>Logout</p>
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="sidebar-mobile shadow">
+        <div>
+          <img src="recources/img/sort.svg" alt="sort image">
+        </div>
+        <div>
+          <img src="recources/img/home.svg" alt="home image">
+        </div>
+        <div class="sidebar-mobile-profile">
+          <img src="recources/img/avatar.svg" alt="avatar image">
+          <img src="recources/img/avatar-outline.svg" alt="avatar-outline image">
+        </div>
+      </div>
+      <div class="sidebar-mobile">
+        <div>
+          <p>Home</p>
+        </div>
+        <div class="sidebar-mobile-search sidebar-mobile">
+          <img src="recources/img/search.svg" alt="search.svg image">
+          <img src="recources/img/bottom-icon.svg" alt="bottom-icon.svg image">
         </div>
       </div>
       <div class="main"> 
