@@ -30,7 +30,6 @@
         flex-direction: column;
         width: 20%;
         min-width: 200px;
-        min-height: 100vh;
         background: #ffffff;
         border: 1px solid #ffffff;
         border-radius: 0 25px 25px 0;
@@ -127,9 +126,14 @@
 
       .main {
         flex: 1;
-        padding: 0 28px;
-        > .search {
-          margin-top: 28px;
+        padding: 28px;
+        padding-bottom: 18px;
+        
+        .title {
+          font-family: carmenSansMedium;
+          font-size: 22px;
+          color: #000000;
+          padding-top: 28px;
         }
         .search {
           display: flex;
@@ -194,12 +198,6 @@
 
           display: flex;
           justify-content: flex-end;
-          .content-title {
-            font-family: carmenSansMedium;
-            font-size: 22px;
-            color: #000000;
-            margin-top: 28px;
-          }
           .chat {
             flex: 1;
             display: flex;
@@ -272,10 +270,12 @@
               }
             }
           }
-          > div:last-child {
-            width: calc((100% - 42px) / 4);
+          .reminder-featured {
+            display: flex;
+            flex-direction: column;
+            width: calc((100% - 42px) / 3);
             min-width: 300px;
-
+            
             .reminder {
               position: relative;
               display: flex;
@@ -283,7 +283,7 @@
               border-radius: 10px;
               background-color: #ffffff;
               box-shadow: #0000004f 2px 3px 6px 0px;
-
+  
               .reminder-date {
                 margin-right: 12px;
                 padding: 16px 10px;
@@ -317,33 +317,76 @@
                 color: #d75f8d;
               }
             }
-          }
-
-          .featured-event {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: #0000004f 2px 3px 6px 0px;
-            > div {
-              padding: 10px 20px;
-
-              .featured-event-title {
-                padding-top: 5px;
-                font-weight: 500;
-                font-size: 25px;
-                letter-spacing: 0.25px;
-                color: rgba(0, 0, 0, 0.87);
+            
+            .featured-event {
+              flex: 1;
+              background-color: #ffffff;
+              border-radius: 10px;
+              box-shadow: #0000004f 2px 3px 6px 0px;
+              
+              >div>img {
+                width: 100%;
               }
-
-              a {
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                text-align: center;
-                color: #ffffff;
+              .featured-event-main {
+                padding: 10px 20px;
+  
+                .featured-event-title {
+                  padding-top: 5px;
+                  font-weight: 500;
+                  font-size: 25px;
+                  letter-spacing: 0.25px;
+                  color: rgba(0, 0, 0, 0.87);
+                }
+  
+                a {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 16px;
+                  text-align: center;
+                  color: #ffffff;
+                }
               }
             }
           }
+        }
+        .community {
+          display: flex;
+          justify-content: space-between;
+          
+          >div {
+            display: inherit;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: #0000004f 2px 3px 6px 0px;   
+            box-sizing: border-box;
+            overflow: hidden;
+            width: 32%;
+            
+            >img {
+              width: 100%;           
+            }
+            
+            >p {
+              position: absolute;
+              width: 46%;
+              height: 14%;
+              padding: 3% 5%;
+              left: 0;
+              bottom: 0;   
+              border-top-right-radius: 28px;   
+              font-weight: 500;
+              font-size: 12px;
+              letter-spacing: 0.15px;
+              color: #FFFFFF;        
+              background: #E28BAE;
+            }
+          }
+        }
+        
+        .bottom-icon {
+          padding-top: 28px;
+          text-align: right;
         }
       }
     }

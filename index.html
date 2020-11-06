@@ -1,171 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet">
-  <link rel="stylesheet/less" type="text/css" href="./recources/scss/style.scss">
-  <script src="//cdn.jsdelivr.net/npm/less" ></script>
-</head>
-<body>
-  <div class="container">
-    <div class="sidebar">
-      <div>
-        <img src="./recources/img/left-arrow.svg" alt="left-arrow image">
-      </div>
-      <div class="sidebar-profile">
-        <img src="./recources/img/avatar.svg" alt="avatar image">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet/less" type="text/css" href="./recources/scss/style.scss">
+    <script src="//cdn.jsdelivr.net/npm/less" ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
         <div>
-          <p>Hi, Karin!</p>
-          <p>View my profile</p>
+          <img src="./recources/img/left-arrow.svg" alt="left-arrow image">
         </div>
-      </div>  
-      <ul class="sidebar-menu">
-        <li>
-          <img src="./recources/img/home.svg" alt="home image">
-          <p>Home</p>
-        </li>
-        <li>
-          <img src="./recources/img/sidebar-icon-2.svg" alt="chat image">
-          <p>Chat</p>
-        </li>
-        <li>
-          <div class="events-image">
-            <img src="./recources/img/sidebar-icon-3.svg" alt="events image">
-            <div>
-              3
-            </div>
-          </div>
-          <p>Events</p>
-        </li>
-        <li>
-          <img src="./recources/img/sidebar-icon-4.svg" alt="users image">
-          <p>Users</p>
-        </li>        
-      </ul>
-      <ul class="sidebar-menu">
-        <li>
-          <img src="./recources/img/sidebar-icon-5.svg" alt="User management image">
-          <p>User management</p>
-        </li>
-        <li>
-          <img src="./recources/img/sidebar-icon-6.svg" alt="Hospital management image">
-          <p>Hospital management</p>
-        </li>
-        <li>
-          <img src="./recources/img/sidebar-icon-7.svg" alt="Topic management image">
-          <p>Topic management</p>
-        </li>
-      </ul>
-      <ul class="sidebar-menu logout">
-        <li>
-          <img src="./recources/img/sidebar-icon-8.svg" alt="logout image">
-          <p>Logout</p>
-        </li>
-      </ul>
-    </div>
-    <div class="main"> 
-      <div class="search">        
-        <div class="search-input">
-          <img src="./recources/img/search.svg" alt="search image">
-          <p>Search for people or groups</p>
-          <input type="text">
-        </div>
-        <div class="search-home">
-          <img src="./recources/img/home.svg" alt="home image">
-        </div>
-      </div>
-      <div class="content">
-        <div class="chat">
-          <p class="content-title">Chat</p>
+        <div class="sidebar-profile">
+          <img src="./recources/img/avatar.svg" alt="avatar image">
           <div>
-            <div class="search">
-              <div class="search-input">
-                <img src="./recources/img/search.svg" alt="search image">
-                <p>Search in conversation</p>
-                <input type="text">
-              </div>
-              <div class="search-home">
-                <img src="./recources/img/chat-create.svg" alt="create image">
-              </div>
-            </div>
-            <div>
-              <p class="sub-title">Guided Conversations</p>
-              <div class="contact">
-                <img src="recources/img/avatar.svg" alt="contact-1 image">
-                <img class="active-icon" src="recources/img/active.svg" alt="active icon">
-                <div class="contact-info">
-                  <p>Lindsey Stroud</p>
-                  <p class="sub-info">Danke Karin fur die Info</p>
-                </div>
-                <p class="contact-activity">Yesterday</p>
-              </div>
-            </div>
-            <div>
-              <p class="sub-title">Open chats</p>
-              <div class="contact">
-                <img src="recources/img/chat-avatar-1.svg" alt="contact-1 image">
-                <div class="contact-info">
-                  <p>Nicci Troiani</p>
-                  <p class="sub-info">Request has been send</p>
-                </div>
-                <p class="contact-activity">One week ago</p>
-              </div>
-              <div class="contact">
-                <img src="recources/img/chat-avatar-2.svg" alt="contact-1 image">
-                <div class="contact-info">
-                  <p>Anna Riklin, Xixi</p>
-                  <p class="sub-info">Ich habe hier ein tolle Bindetechnik für ein Kopftuch gefunden.</p>
-                </div>
-                <p class="contact-activity">One week ago</p>
-              </div>
-              <div class="contact">
-                <img src="recources/img/chat-avatar-3.svg" alt="contact-1 image">
-                <div class="contact-info">
-                  <p>Xixi</p>
-                  <p class="sub-info">Today I had my first therapy. I could be worse honestly.</p>
-                </div>
-                <p class="contact-activity">1. Sept.</p>
-              </div>              
-              <div class="contact">
-                <img src="recources/img/chat-avatar-1.svg" alt="contact-2 image">
-                <div class="contact-info">
-                  <p>Nicci Troiani</p>
-                  <p class="sub-info">Request has been send</p>
-                </div>
-                <p class="contact-activity">One week ago</p>
-              </div>
-            </div>            
+            <p>Hi, Karin!</p>
+            <p>View my profile</p>
           </div>
+        </div>  
+        <div>
+          <ul class="sidebar-menu">
+            <li>
+              <img src="./recources/img/home.svg" alt="home image">
+              <p>Home</p>
+            </li>
+            <li>
+              <img src="./recources/img/sidebar-icon-2.svg" alt="chat image">
+              <p>Chat</p>
+            </li>
+            <li>
+              <div class="events-image">
+                <img src="./recources/img/sidebar-icon-3.svg" alt="events image">
+                <div>
+                  3
+                </div>
+              </div>
+              <p>Events</p>
+            </li>
+            <li>
+              <img src="./recources/img/sidebar-icon-4.svg" alt="users image">
+              <p>Users</p>
+            </li>        
+          </ul>
         </div>
         <div>
-          <div>
-            <p class="content-title">Reminders</p>
-            <div class="reminder">
-              <a href="#" class="sub-btn">See more</a href="#">
-              <p class="reminder-date"><b>12</b> <br>June</p>
-              <p class="reminder-text">Meet Sabine today in our Stream at 5:00 pm</p>
-              <img src="recources/img/avatar.svg" alt="avatar image">
-            </div>
+          <ul class="sidebar-menu">
+            <li>
+              <img src="./recources/img/sidebar-icon-5.svg" alt="User management image">
+              <p>User management</p>
+            </li>
+            <li>
+              <img src="./recources/img/sidebar-icon-6.svg" alt="Hospital management image">
+              <p>Hospital management</p>
+            </li>
+            <li>
+              <img src="./recources/img/sidebar-icon-7.svg" alt="Topic management image">
+              <p>Topic management</p>
+            </li>
+          </ul>
+        </div>
+        <div class="logout">
+          <ul class="sidebar-menu">
+            <li>
+              <img src="./recources/img/sidebar-icon-8.svg" alt="logout image">
+              <p>Logout</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main"> 
+        <div class="search">        
+          <div class="search-input">
+            <img src="./recources/img/search.svg" alt="search image">
+            <p>Search for people or groups</p>
+            <input type="text">
           </div>
-          <div>
-            <p class="content-title">Featured event</p>
-            <div class="featured-event">
-              <img src="recources/img/featured-event.svg" alt="Featured event image" width="100%" height="100%">
+          <div class="search-home">
+            <img src="./recources/img/home.svg" alt="home image">
+          </div>
+        </div>
+        <div class="content">
+          <div class="chat">
+            <p class="title">Chat</p>
+            <div>
+              <div class="search">
+                <div class="search-input">
+                  <img src="./recources/img/search.svg" alt="search image">
+                  <p>Search in conversation</p>
+                  <input type="text">
+                </div>
+                <div class="search-home">
+                  <img src="./recources/img/chat-create.svg" alt="create image">
+                </div>
+              </div>
               <div>
-                <p class="sub-title">Connect to support</p>
-                <p class="featured-event-title">Online Event</p>
-                <p class="sub-title">Fri. 24 of October</p>
-                <p class="sub-info">Short words to know more about this event.</p>
-                <a class="btn" href="#">Show event</a>
+                <p class="sub-title">Guided Conversations</p>
+                <div class="contact">
+                  <img src="recources/img/avatar.svg" alt="contact-1 image">
+                  <img class="active-icon" src="recources/img/active.svg" alt="active icon">
+                  <div class="contact-info">
+                    <p>Lindsey Stroud</p>
+                    <p class="sub-info">Danke Karin fur die Info</p>
+                  </div>
+                  <p class="contact-activity">Yesterday</p>
+                </div>
+              </div>
+              <div>
+                <p class="sub-title">Open chats</p>
+                <div class="contact">
+                  <img src="recources/img/chat-avatar-1.svg" alt="contact-1 image">
+                  <div class="contact-info">
+                    <p>Nicci Troiani</p>
+                    <p class="sub-info">Request has been send</p>
+                  </div>
+                  <p class="contact-activity">One week ago</p>
+                </div>
+                <div class="contact">
+                  <img src="recources/img/chat-avatar-2.svg" alt="contact-1 image">
+                  <div class="contact-info">
+                    <p>Anna Riklin, Xixi</p>
+                    <p class="sub-info">Ich habe hier ein tolle Bindetechnik für ein Kopftuch gefunden.</p>
+                  </div>
+                  <p class="contact-activity">One week ago</p>
+                </div>
+                <div class="contact">
+                  <img src="recources/img/chat-avatar-3.svg" alt="contact-1 image">
+                  <div class="contact-info">
+                    <p>Xixi</p>
+                    <p class="sub-info">Today I had my first therapy. I could be worse honestly.</p>
+                  </div>
+                  <p class="contact-activity">1. Sept.</p>
+                </div>              
+                <div class="contact">
+                  <img src="recources/img/chat-avatar-1.svg" alt="contact-2 image">
+                  <div class="contact-info">
+                    <p>Nicci Troiani</p>
+                    <p class="sub-info">Request has been send</p>
+                  </div>
+                  <p class="contact-activity">One week ago</p>
+                </div>
+              </div>            
+            </div>
+          </div>
+          <div class="reminder-featured">
+            <div>
+              <p class="title">Reminders</p>
+              <div class="reminder">
+                <a href="#" class="sub-btn">See more</a>
+                <p class="reminder-date"><b>12</b> <br>June</p>
+                <p class="reminder-text">Meet Sabine today in our Stream at 5:00 pm</p>
+                <img src="recources/img/avatar.svg" alt="avatar image">
+              </div>
+            </div>
+            <p class="title">Featured event</p>
+            <div class="featured-event">
+              <div>
+                <img src="recources/img/featured-event.svg" alt="Featured event image">
+                <div class="featured-event-main">
+                  <div>
+                    <p class="sub-title">Connect to support</p>
+                    <p class="featured-event-title">Online Event</p>
+                    <p class="sub-title">Fri. 24 of October</p>
+                    <p class="sub-info">Short words to know more about this event.</p>
+                  </div>
+                  <div>
+                    <a class="btn" href="#">Show event</a>
+                  </div>                
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div>        
+          <p class="title">Community</p>
+          <div class="community">
+            <div>
+              <img src="recources/img/community-1.svg" alt="community-1 image">
+              <p>Meet Nancy today in our <br> Stream at 5:00 pm</p>
+            </div>
+            <div>
+              <img src="recources/img/community-2.svg" alt="community-2 image">
+              <p>Meet Nancy today in our <br> Stream at 5:00 pm</p>
+            </div>
+            <div>
+              <img src="recources/img/community-3.svg" alt="community-3 image">
+              <p>Meet Nancy today in our <br> Stream at 5:00 pm</p>
+            </div>
+          </div>
+          <div class="bottom-icon">
+            <img src="recources/img/bottom-icon.svg" alt="bottom-icon image">
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
