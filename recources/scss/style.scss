@@ -26,6 +26,10 @@
       a {
         text-decoration: none;
       }
+      
+      .avatar {
+        border-radius: 50%;
+      }
 
       .sidebar {
         display: flex;
@@ -245,7 +249,7 @@
           }
 
           .sub-info {
-            padding-bottom: 10px;
+            padding-bottom: 18px;
             font-weight: normal;
             font-size: 12px;
             letter-spacing: 0.25px;
@@ -293,10 +297,11 @@
             .contact {
               display: flex;
               position: relative;
+              margin-bottom: 10px;
 
               .active-icon {
                 position: absolute;
-                top: 0;
+                top: 4px;
                 left: 36px;
               }
 
@@ -330,8 +335,22 @@
             flex-direction: column;
             width: calc((100% - 42px) / 3);
             
-            .reminder {
+            >div {              
               position: relative;
+              
+              .sub-btn {
+                position: absolute;
+                top: -18px;
+                right: 0;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 112%;
+                text-align: right;
+                color: #d75f8d;
+              }
+            } 
+            
+            .reminder {
               display: flex;
               align-items: center;
               border-radius: 10px;
@@ -360,16 +379,6 @@
               > img {
                 padding: 8px 14px 0 0;
               }
-              .sub-btn {
-                position: absolute;
-                top: -18px;
-                right: 0;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 112%;
-                text-align: right;
-                color: #d75f8d;
-              }
             }
             
             .featured-event {
@@ -385,7 +394,6 @@
                 padding: 10px 20px;
   
                 .featured-event-title {
-                  padding-top: 5px;
                   font-weight: 500;
                   font-size: 25px;
                   letter-spacing: 0.25px;
@@ -399,6 +407,10 @@
                   font-size: 16px;
                   text-align: center;
                   color: #ffffff;
+                }
+                
+                >:last-child {
+                  padding-bottom: 27px;
                 }
               }
             }
